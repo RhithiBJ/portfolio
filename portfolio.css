@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    color: #0c0808;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #090606;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight is ease forwards;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: #090809;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s*var(--i));
+
+}
+
+.navbar a:hover {
+    color: rgb(0, 238, 255);
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-image:url("pexels-francesco-ungaro-281260.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+    padding-right:20%;
+}
+
+.home-content {
+    max-width: 640px;
+}
+.acontent{
+    max-width:800px;
+    padding-left:5%;
+}
+.home-content h3 {
+    font-size: 45px;
+    font-weight: 200;
+    opacity:0;
+    animation:slideBottom is ease forwards;
+    animation-delay: .7s;
+}
+.home-content h2 {
+    font-size: 38px;
+    font-weight: 700;
+    
+}
+
+.home-content h3:nth-of-type(1) {
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.home-content h3 span {
+    color: rgb(0, 238, 255); 
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+
+.home-content p {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.btn-box {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+    
+
+.btn-box :hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan
+}
+
+.about{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    gap:2rem;
+    padding-bottom:6rem;
+}
+
+.aimg img{
+    padding-bottom:20%;
+    width:60px;
+    height:20%;
+    width:100%;
+    border-radius:200px;
+}
+
+.acontent h2{
+    font-size:40px;
+    padding-left:28%;
+}
+
+.acontent h3{
+    font-size:30px;
+    padding-right:30%;
+    color:rgb(0, 218, 234);
+}
+
+.acontent p{
+    font-size:30px;
+    color:#000000;
+    padding-left:0.5%;
+    font-weight: 600;
+}
+
+
+@Keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@Keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+* {
+    box-sizing:border-box;
+}
+.sk{
+    max-width:1000px;
+    align-items:center;
+    padding-left:40%;
+    width:100%;
+    padding-left:3%;
+    
+}
+
+.sk1 h1 {
+    padding-left:77%;
+    color:#464544;
+    text-decoration:underline ;
+}
+
+.a1{
+    padding-left:50%;
+}
+
+.subt h1 {
+    padding-left:45%;
+    color:#464544;
+    text-decoration:underline ;
+}
+.container {
+  width: 170%; 
+  background-color: #f7f7f7;
+  border-radius:75px 75px;
+
+}
+
+.skills {
+  text-align: right; 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  color: white; 
+  border-radius:75px 75px;
+  width:100%;
+  
+}
+
+.ql {width: 99%; background-color: #31302f; border-radius:75px 75px;} /* Green */
+.ld {width: 89%; background-color: #0ef; border-radius:75px 75px} /* Blue */
+.cr{width: 96%; background-color: #31302f; border-radius:75px 75px} /* Red */
+.ts {width: 95%; background-color: #0ef; border-radius:75px 75px;;} /* Dark Grey */
+
+.sk1 h3{
+    font-size:40px;
+    font-style: normal;
+    color:#090809;
+    padding-left:79.7%;
+}
+
+.sk p{
+    font-size:20px;
+    font-style: normal;
+    color:#090809;
+    padding-left:0.5%;
+}
+
+.radial-bars{
+    width:20%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    align-items:flex-start;
+}
+
+.radial-bars.radial-bar svg{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%)rotate(-90deg);
+    width:120px;
+    height:160px;
+}
+
+.radial-bars.radial-bar.progress-bar{
+    stroke-width:10;
+    stop-color:#0c0808;
+    fill:transparent;
+    stroke-dasharray:502;
+    stroke-linecap:round;
+    animation:animate-bar 1s linear forwards;
+}
+
+@keyframes animate-bar{
+    100%{
+        stroke-dashoffset:-1;
+    }
+}
+ 
+.sk2{
+    display:flex;
+    flex-wrap:wrap;
+}
+.path{
+    stroke-width:10;
+    stroke:#0ef;
+    fill:transparent;
+    stroke-dasharray:502;
+    stroke-dashoffset:502;
+    stroke-linecap:round;
+}
+
+.path-1{
+    animation:animate-path1 1s 1s linear forwards}
+
+.path-2{
+        animation:animate-path2 1s 1s linear forwards}
+
+.path-3{
+            animation:animate-path3 1s 1s linear forwards}
+.path-4{
+                animation:animate-path4 1s 1s linear forwards}
+
+
+@keyframes animate-path1{
+        100%{
+            stroke-dashoffset:50;;
+        }
+}
+
+@keyframes animate-path2{
+    100%{
+        stroke-dashoffset:175;;
+    }
+}
+
+@keyframes animate-path3{
+    100%{
+        stroke-dashoffset:125;;
+    }
+}
+
+@keyframes animate-path4{
+    100%{
+        stroke-dashoffset:75;;
+    }
+}
+
+.radial-bar .percentage{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:17px;
+    font-style: oblique;
+    font-weight:500;
+    animation:showText 0.5s 1s linear forwards;
+    opacity:0;
+}
+
+.radial-bar.percentage{
+
+    padding-bottom:800%;
+}
+
+.radial-bar.text{
+    width:100%;
+    position:absolute;
+    text-align:center;
+    left:50%;
+    bottom:-5px;
+    transform:translateX(-50px);
+    font-size:17px;
+    font-weight:500;
+    animation:showText 0.5s 1s linear forwards;
+    opacity:0;    
+}
+
+input[type=text], select, textarea {
+    width: 30%; 
+    padding: 12px; 
+    border: 3px solid #4b4a4a; 
+    border-radius: 40px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+    justify-content:center;
+  
+
+.container1 {
+    border-radius: 5px;
+    padding: 20px;
+}
